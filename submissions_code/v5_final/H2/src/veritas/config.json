@@ -1,0 +1,30 @@
+{
+    "atoms": {
+        "max_calls": 6,
+        "views": ["args", "policy", "step"]
+    },
+    "call_frac": 0.203,
+    "deadlines": {
+        "base": 1250,
+        "calls": 1380,
+        "hard": 1590,
+        "server": 1000,
+        "text_atoms": 1500
+    },
+    "gpu_util": 0.9,
+    "group_logit_shift": {
+        "history": 0.5862,
+        "process": 0.6325
+    },
+    "max_context_chars": 330000,
+    "max_model_len": 131072,
+    "served": "m",
+    "strategy": "final",
+    "text_atoms": {
+        "questions": ["facts", "action_claim", "reask", "refusal", "policy", "overall"]
+    },
+    "text_frac": 0.421,
+    "text_ranker": "base",
+    "version": "v5-H2_final",
+    "workers": 96
+}

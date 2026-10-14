@@ -1,0 +1,5 @@
+{
+  "version": "v4.2-P_hard",
+  "strategy": "probe_hard",
+  "budget_frac": 0.185
+}

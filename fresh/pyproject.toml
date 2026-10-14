@@ -1,0 +1,17 @@
+[project]
+name = "veritas-guardian"
+version = "4.2.0"
+description = "Guardian of Truth: детерминированные проверки ходов LLM-агента и ранжирование ходов моделью через vLLM"
+requires-python = ">=3.10"
+dependencies = []
+# pandas, pyarrow, jinja2 и vLLM берутся из окружения обсчёта (они там есть: их требует бейзлайн и vLLM)
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+veritas = ["*.json", "prompts/*.md", "assets/*.jinja"]

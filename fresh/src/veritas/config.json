@@ -1,0 +1,42 @@
+{
+  "version": "v4.1-A_replay",
+  "strategy": "replay",
+  "budget_frac": 0.185,
+  "read_weight": 0.5,
+  "workers": 96,
+  "max_context_chars": 330000,
+  "max_model_len": 131072,
+  "gpu_util": 0.9,
+  "served": "m",
+  "min_coverage": 0.5,
+  "deadlines": {
+    "server": 1000,
+    "fast": 1150,
+    "llm": 1450,
+    "hard": 1590
+  },
+  "replay": {
+    "n_fast": 6,
+    "t_fast": 0.8,
+    "max_fast": 384,
+    "n_think": 2,
+    "n_think_read": 1,
+    "t_think": 0.6,
+    "max_think": 2048,
+    "w_think": 2.0
+  },
+  "audit": {
+    "n": 2,
+    "n_read": 1,
+    "t_think": 0.6,
+    "max_think": 3000
+  },
+  "atoms": {
+    "views": [
+      "args",
+      "policy",
+      "step"
+    ],
+    "max_calls": 6
+  }
+}

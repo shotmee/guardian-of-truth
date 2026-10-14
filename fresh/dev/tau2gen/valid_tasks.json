@@ -1,0 +1,55 @@
+{
+ "airline": [
+  "10",
+  "21",
+  "23",
+  "24",
+  "3",
+  "44",
+  "47",
+  "5",
+  "7",
+  "8",
+  "9"
+ ],
+ "retail": [
+  "106",
+  "108",
+  "12",
+  "14",
+  "27",
+  "29",
+  "36",
+  "47",
+  "48",
+  "78",
+  "87"
+ ],
+ "telecom": [
+  "mms_issueairplane_mode_on-bad_network_preference-bad_wifi_calling-break_app_sms_p",
+  "mms_issueairplane_mode_on-bad_network_preference-bad_wifi_calling-data_usage_exce",
+  "mms_issueairplane_mode_on-bad_network_preference-break_apn_mms_setting-break_app_",
+  "mms_issueairplane_mode_on-bad_network_preference-break_app_both_permissions-data_",
+  "mms_issueairplane_mode_on-bad_wifi_calling-break_app_both_permissions-data_mode_o",
+  "mms_issueairplane_mode_on-break_app_both_permissionsPERSONA_Hard",
+  "mms_issuebad_network_preference-bad_wifi_calling-break_apn_mms_setting-break_app_",
+  "mms_issuebreak_apn_mms_setting-user_abroad_roaming_enabled_offPERSONA_Hard",
+  "mobile_data_issueairplane_mode_on-bad_network_preference-bad_vpn-data_saver_mode_",
+  "mobile_data_issuebad_network_preference-bad_vpn-data_mode_off-data_saver_mode_onP",
+  "service_issueairplane_mode_on-break_apn_settings-lock_sim_card_pin-overdue_bill_s",
+  "service_issuebreak_apn_settings-contract_end_suspension-lock_sim_card_pin-unseat_"
+ ],
+ "banking_knowledge": [
+  "task_003",
+  "task_005",
+  "task_018",
+  "task_033",
+  "task_051",
+  "task_057",
+  "task_063",
+  "task_068",
+  "task_080",
+  "task_081",
+  "task_083"
+ ]
+}

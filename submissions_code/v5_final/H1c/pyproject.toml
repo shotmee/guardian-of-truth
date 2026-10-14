@@ -1,0 +1,20 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=68"]
+
+[project]
+description = "Guardian of Truth — LLM agent turn auditor with rule checks and model-based ranking via vLLM."
+name = "veritas-guardian"
+requires-python = ">=3.10"
+version = "4.2.0"
+dependencies = []
+
+[tool.setuptools.package-data]
+veritas = [
+  "assets/*.jinja",
+  "prompts/*.md",
+  "*.json",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,101 @@
+{
+  "version": "2.4",
+  "served_name": "guardian",
+  "port": 8011,
+  "max_model_len": 131072,
+  "gpu_memory_utilization": 0.9,
+  "max_num_seqs": 128,
+  "vllm_extra_args": [],
+  "max_prompt_chars": 300000,
+  "hard_deadline_s": 1500,
+  "think_stop_margin_s": 45,
+  "write_every_s": 30,
+  "phase_a": true,
+  "phase_b": true,
+  "b_order": "pa_desc",
+  "b_min_pa": null,
+  "concurrency_a": 48,
+  "concurrency_b": 112,
+  "think_max_tokens": 6144,
+  "think_min_tokens": 768,
+  "assumed_seq_tok_s": 20.0,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "second_sample": true,
+  "second_band": [
+    0.0,
+    1.0
+  ],
+  "hard_override": true,
+  "decision": "stack",
+  "gate_pa": 0.997,
+  "threshold_a_only": 0.999,
+  "max_pos_frac": 0.3,
+  "w_think": 0.6,
+  "threshold": 0.55,
+  "think_logprobs": 5,
+  "judge_prompt": "judge_system.md",
+  "evidence": true,
+  "sentence_probe": false,
+  "sentence_k": 8,
+  "extra_a": {
+    "base": {
+      "system": "baseline_prompt.md",
+      "user": "baseline"
+    }
+  },
+  "b_skip_ro": false,
+  "b2_all": false,
+  "stack": {
+    "features": [
+      "la",
+      "la_base",
+      "transfer",
+      "claimed_action_no_call",
+      "repeat_call",
+      "dom_airline",
+      "dom_banking_knowledge",
+      "dom_retail",
+      "dom_telecom"
+    ],
+    "mu": [
+      0.20239,
+      -1.317283,
+      0.020408,
+      0.038265,
+      0.010204,
+      0.239796,
+      0.306122,
+      0.158163,
+      0.295918
+    ],
+    "sd": [
+      3.827102,
+      2.517078,
+      0.141393,
+      0.191837,
+      0.1005,
+      0.42696,
+      0.460882,
+      0.364895,
+      0.456455
+    ],
+    "coef": [
+      1.657461,
+      1.142018,
+      0.283098,
+      0.372108,
+      0.071669,
+      -0.441559,
+      0.121581,
+      0.253191,
+      0.087862
+    ],
+    "intercept": -3.462524,
+    "threshold": 0.4
+  },
+  "b_mode": "verify_flags",
+  "b_rule": "any",
+  "judge_b_prompt": null
+}

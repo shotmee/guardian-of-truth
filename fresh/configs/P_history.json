@@ -1,0 +1,5 @@
+{
+  "version": "v5-P_history",
+  "strategy": "probe_history",
+  "budget_frac": 0.185
+}

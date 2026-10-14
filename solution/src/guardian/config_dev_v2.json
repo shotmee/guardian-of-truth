@@ -1,0 +1,55 @@
+{
+  "version": "2.0-dev",
+  "served_name": "guardian",
+  "port": 8011,
+  "max_model_len": 131072,
+  "gpu_memory_utilization": 0.9,
+  "max_num_seqs": 128,
+  "vllm_extra_args": [],
+  "max_prompt_chars": 300000,
+  "hard_deadline_s": 1500,
+  "think_stop_margin_s": 45,
+  "write_every_s": 30,
+  "phase_a": true,
+  "phase_b": true,
+  "b_order": "pa_desc",
+  "b_min_pa": null,
+  "concurrency_a": 48,
+  "concurrency_b": 112,
+  "think_max_tokens": 6144,
+  "think_min_tokens": 768,
+  "assumed_seq_tok_s": 20.0,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "second_sample": true,
+  "second_band": [
+    0.0,
+    1.0
+  ],
+  "hard_override": true,
+  "decision": "stack",
+  "gate_pa": 0.997,
+  "threshold_a_only": 0.999,
+  "max_pos_frac": 0.3,
+  "w_think": 0.6,
+  "threshold": 0.55,
+  "think_logprobs": 5,
+  "judge_prompt": "judge_system.md",
+  "evidence": true,
+  "sentence_probe": true,
+  "sentence_k": 8,
+  "extra_a": {
+    "base": {
+      "system": "baseline_prompt.md",
+      "user": "baseline"
+    },
+    "v1": {
+      "system": "judge_system_v1.md",
+      "user": "judge"
+    }
+  },
+  "b_skip_ro": true,
+  "b2_all": true,
+  "stack": null
+}

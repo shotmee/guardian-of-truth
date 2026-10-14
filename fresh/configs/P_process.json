@@ -1,0 +1,5 @@
+{
+  "version": "v5-P_process",
+  "strategy": "probe_process",
+  "budget_frac": 0.185
+}

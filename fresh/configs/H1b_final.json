@@ -1,0 +1,41 @@
+{
+  "version": "v5-H1b_final",
+  "strategy": "final",
+  "call_frac": 0.203,
+  "text_frac": 0.421,
+  "group_logit_shift": {
+    "process": 0.6325,
+    "history": 0.5862
+  },
+  "workers": 96,
+  "max_context_chars": 330000,
+  "max_model_len": 131072,
+  "gpu_util": 0.9,
+  "served": "m",
+  "deadlines": {
+    "server": 1000,
+    "base": 1250,
+    "calls": 1380,
+    "text_atoms": 1500,
+    "hard": 1590
+  },
+  "atoms": {
+    "views": [
+      "args",
+      "policy",
+      "step"
+    ],
+    "max_calls": 6
+  },
+  "text_atoms": {
+    "questions": [
+      "facts",
+      "action_claim",
+      "reask",
+      "refusal",
+      "policy",
+      "overall"
+    ]
+  },
+  "text_ranker": "base+atoms+groups"
+}
